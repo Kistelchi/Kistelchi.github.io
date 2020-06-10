@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet"
+      type="text/css"
+      href=gallery.css>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=decive-width, initial-scale-1">
+    <link rel="stylesheet" href="/css/base.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+          rel="stylesheet">
+        
+        <title>Sustainable Goals</title>
+    <style>
+        .cine{
+            display: block;
+            margin: auto;
+            width: 70%;
+            height: 450px;
+            border: 5px;
+        }
+    </style>
+    <body>
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+        li{
+            float: left;
+        }
+        li a, dropbtn{
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            text-decoration: none;
+        }
+        li a:hover, .dropdown:hover .dropbtn{
+            background-color: black;
+        }
+        li.dropdown{
+            display: inline-block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {background-color: orange}
+        
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        </style>
+        <body>
+        <h2>Sustainable Cities and Communities</h2>
+            <ul>
+            <li><a href="FullDesign.html">Home</a></li>
+            <li><a href="Information.html">Information</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li class="dropdown">
+                <a href="link4" class="dropbtn">Contact/Help</a>
+                <div class="dropdown-content">
+                <a href="Help.html">Contact Info</a>
+                <a href="Help.html">Contact Info</a>
+                <a href="#">Refrences</a>
+                </div>
+                </li>
+            </ul>
+        </body>
+    </body>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <div>
+        <style>
+        <style>
+{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+  display: none;
+}
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+<body>
+
+<div style="text-align:center">
+  <h2>Image Gallery</h2>
+  <p>Click on the images below:</p>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://www.worldfinance.com/wp-content/uploads/2020/03/African_housing_crisis.jpg" alt="Housing In Africa" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://mymodernmet.com/wp/wp-content/uploads/archive/YE7m4tEioidrOHKsKMxh_XavierPortela1.jpg" alt="Tokyo" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://resources.stuff.co.nz/content/dam/images/1/l/m/y/g/y/image.related.StuffLandscapeSixteenByNine.710x400.1m6u57.png/1507602067231.jpg" alt="New Zealand Housing" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://images.indianexpress.com/2019/02/slums-2100.jpg" alt="Slums in India" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>    
+        <style>
+            *{box-sizing: border-box}
+            body {font-family: Verdana, sans-serif; margin:0}
+            .mySlides {display: none}
+            img {vertical-align: middle;}
+            
+            .slideshow-container{ 
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            }
+            .prev, .next{ 
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            }
+            .next{
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+            .prev:hover, .next:hover{
+                background-color: rgba(0,0,0,0.8);
+            }
+            .text{
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+            }
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+            .dot{
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+            .active, .dot:hover{
+                background-color: #717171;
+            }
+            .fade{
+                -webkit-animation-name: fade;
+                -webkit-animation animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+            @-webkit-keyframes fade{
+                from {opacity: .4}
+                to {opacity: 1}
+            }
+            @keyframes fade{
+                from {opacity: .4}
+                to {opacity: 1}
+            }
+            @media only screen and (max-width: 300px){
+                .prev, .next, .text {font-size 11px}
+            }
+            
+        </style>
+    </head>
