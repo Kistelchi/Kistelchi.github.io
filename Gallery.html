@@ -92,64 +92,16 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: Arial;
-}
-
-.column {
-  float: left;
-  width: 25%;
-  padding: 10px;
-}
-
-.column img {
-  opacity: 0.8; 
-  cursor: pointer; 
-}
-
-.column img:hover {
-  opacity: 1;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.container {
-  position: relative;
-  display: none;
-}
-
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
-}
-
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
-}
 </style>
 <body>
 
 <div style="text-align:center">
   <h2>Image Gallery</h2>
-  <p>Click on the images below:</p>
 </div>
 
 <div class="row">
   <div class="column">
-    <img src="https://www.worldfinance.com/wp-content/uploads/2020/03/African_housing_crisis.jpg" alt="Housing In Africa" style="width:100%" onclick="myFunction(this);">
+    <img src="https://www.worldfinance.com/wp-content/uploads/2020/03/African_housing_crisis.jpg" alt="Housing In Africa" style="width:100%; ;" onclick="myFunction(this);">
   </div>
   <div class="column">
     <img src="https://mymodernmet.com/wp/wp-content/uploads/archive/YE7m4tEioidrOHKsKMxh_XavierPortela1.jpg" alt="Tokyo" style="width:100%" onclick="myFunction(this);">
@@ -160,11 +112,14 @@ body {
   <div class="column">
     <img src="https://images.indianexpress.com/2019/02/slums-2100.jpg" alt="Slums in India" style="width:100%" onclick="myFunction(this);">
   </div>
+    <div class="column">
+    <img src="https://media.nature.com/w700/magazine-assets/d41586-018-04258-2/d41586-018-04258-2_15593332.jpg" alt="Natural Disasters" style="width:100%" onclick="myFunction(this);">
+  </div>
 </div>
 
 <div class="container">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <img id="expandedImg" style="width:100%">
+  <img id="expandedImg" style="width:50%; height:350px;">
   <div id="imgtext"></div>
 </div>
 
