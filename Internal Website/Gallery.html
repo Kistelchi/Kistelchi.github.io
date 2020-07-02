@@ -2,17 +2,15 @@
 <html>
 <link rel="stylesheet"
       type="text/css"
-      href=help.css>
+      href=gallery.css>
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=decive-width, initial-scale-1">
-        
     <link rel="stylesheet" href="/css/base.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
           rel="stylesheet">
         
         <title>Sustainable Goals</title>
-    </head>
     <style>
         .cine{
             display: block;
@@ -78,6 +76,7 @@
                 <a href="link4" class="dropbtn">Contact/Help</a>
                 <div class="dropdown-content">
                 <a href="Help.html">Contact Info</a>
+                <a href="Help.html">Contact Info</a>
                 <a href="#">Refrences</a>
                 </div>
                 </li>
@@ -86,6 +85,55 @@
     </body>
     <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+        <div>
+        <style>
+        <style>
+{
+  box-sizing: border-box;
+}
+
+</style>
+<body>
+
+<div style="text-align:center">
+  <h2>Image Gallery</h2>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://www.worldfinance.com/wp-content/uploads/2020/03/African_housing_crisis.jpg" alt="Housing In Africa" style="width:100%; ;" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://mymodernmet.com/wp/wp-content/uploads/archive/YE7m4tEioidrOHKsKMxh_XavierPortela1.jpg" alt="Tokyo" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://resources.stuff.co.nz/content/dam/images/1/l/m/y/g/y/image.related.StuffLandscapeSixteenByNine.710x400.1m6u57.png/1507602067231.jpg" alt="New Zealand Housing" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://images.indianexpress.com/2019/02/slums-2100.jpg" alt="Slums in India" style="width:100%" onclick="myFunction(this);">
+  </div>
+    <div class="column">
+    <img src="https://media.nature.com/w700/magazine-assets/d41586-018-04258-2/d41586-018-04258-2_15593332.jpg" alt="Natural Disasters" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:50%; height:350px;">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>    
         <style>
             *{box-sizing: border-box}
             body {font-family: Verdana, sans-serif; margin:0}
@@ -164,74 +212,6 @@
             @media only screen and (max-width: 300px){
                 .prev, .next, .text {font-size 11px}
             }
-            <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: black;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: black;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-</style>
-</head>
-<body>
-
-<h3>Contact Form</h3>
-
-<div class="container">
-  <form action="/action_page.php">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-        <option value="new zealand">New Zealand</option>
-        <option value="china">China</option>
-        <option value="usa">Japan</option>
-        <option value="africa">Africa</option>
-        <option value="Russia">Russia</option>
-        <option value="brazil">Brazil</option>
-    </select>
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-  </form>
-</div>
-
-</body>
-</html>
+            
+        </style>
+    </head>
